@@ -26,8 +26,9 @@ build({
                     filename: 'index.html',
                     htmlTemplate: `
                     <!DOCTYPE html>
-                    <html lang="en" title="Equalizer landing page">
+                    <html lang="en">
                     <head>
+                        <title>Equalizer Landing Page</title>
                         <meta charset="UTF-8">
                         <meta name="viewport" content="width=device-width, initial-scale=1.0">
                         <link rel="preconnect" href="https://fonts.googleapis.com">
