@@ -1,0 +1,45 @@
+{
+    "name": "equalizer-landing-page",
+    "version": "1.0.0",
+    "description": "Frontendmentor Equalizer Landing Page",
+    "main": "index.js",
+    "scripts": {
+        "build": "npm run build:css && node ./build/index.mjs ",
+        "build:watch": "node ./build/index.mjs --watch",
+        "build:css": "npx tailwindcss --postcss postcss.config.js -i src/tailwind.css -o src/app.css",
+        "build:css:watch": "npx tailwindcss -w --postcss postcss.config.js -i src/tailwind.css -o src/app.css",
+        "dev-server": "live-server --wait=500 dist/",
+        "dev": "concurrently \"npm run build:watch\" \"npm run build:css:watch\" \"npm run dev-server\"",
+        "test": "",
+        "prepare": "husky install"
+    },
+    "author": "Pedro Alves",
+    "license": "ISC",
+    "dependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+        "@compodoc/live-server": "^1.2.3",
+        "@craftamap/esbuild-plugin-html": "^0.3.2",
+        "@types/react": "^17.0.43",
+        "@types/react-dom": "^17.0.14",
+        "@typescript-eslint/eslint-plugin": "^5.16.0",
+        "@typescript-eslint/parser": "^5.16.0",
+        "autoprefixer": "^10.4.4",
+        "concurrently": "^7.0.0",
+        "esbuild": "0.14.28",
+        "esbuild-plugin-clean": "^0.9.0",
+        "esbuild-svgr-plugin": "^0.2.0",
+        "eslint": "^8.12.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-react": "^7.29.4",
+        "husky": "^7.0.4",
+        "lint-staged": "^12.3.7",
+        "postcss": "^8.4.12",
+        "postcss-import": "^14.1.0",
+        "prettier": "2.6.1",
+        "tailwindcss": "^3.0.23",
+        "typescript": "4.6.3"
+    }
+}

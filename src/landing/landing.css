@@ -1,0 +1,117 @@
+.content::before {
+    content: '';
+    position: absolute;
+    background-image: url('./images/bg-main-mobile.png');
+    background-size: 281px 480px;
+    @apply bg-no-repeat;
+    width: 281px;
+    height: 480px;
+    top: -104px;
+    right: -80px;
+    z-index: -1;
+}
+
+@screen md {
+    .content::before {
+        background-image: url('./images/bg-main-tablet.png');
+        background-size: 983px 808px;
+        width: 983px;
+        height: 808px;
+        top: -112px;
+        left: -254px;
+        @apply right-0;
+    }
+
+    .content::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background-image: url('./images/bg-pattern-1.svg');
+        background-size: 267px 400px;
+        width: 267px;
+        height: 400px;
+        @apply -top-9;
+        @apply -right-16;
+    }
+}
+
+@screen lg {
+    .content::before {
+        background-image: url('./images/bg-main-desktop.png');
+        background-size: 1613px 1758px;
+        width: 1613px;
+        height: 1758px;
+        top: -112px;
+        left: -311px;
+    }
+
+    .content::after {
+        background-image: url('./images/bg-pattern-1.svg');
+        background-size: 312px 468px;
+        width: 312px;
+        height: 468px;
+        @apply -right-40;
+    }
+}
+
+.dark-card {
+    @apply z-0;
+}
+
+.dark-card::before {
+    content: '';
+    position: absolute;
+    background: url('./images/bg-pattern-2.svg');
+    background-size: 280px 420px;
+    width: 280px;
+    height: 420px;
+    @apply top-0;
+    @apply left-1/2;
+    @apply -ml-36;
+}
+
+.dark-card::after {
+    content: '';
+    position: absolute;
+    background: url('./images/illustration-app.png');
+    background-size: 209px 430px;
+    width: 209px;
+    height: 430px;
+    @apply -top-24;
+    @apply left-1/2;
+    @apply -ml-28;
+}
+
+@screen md {
+    .dark-card::before {
+        @apply left-64;
+        @apply ml-0;
+    }
+
+    .dark-card::after {
+        background-size: 270px 556px;
+        width: 270px;
+        height: 556px;
+        @apply left-16;
+        @apply ml-0;
+        @apply -top-36;
+    }
+}
+
+@screen lg {
+    .dark-card::before {
+        background-size: 312px 468px;
+        width: 312px;
+        height: 468px;
+        left: 336px;
+        @apply -top-10;
+    }
+
+    .dark-card::after {
+        background-size: 312px 642px;
+        width: 312px;
+        height: 642px;
+        left: 102px;
+        @apply -top-52;
+    }
+}
