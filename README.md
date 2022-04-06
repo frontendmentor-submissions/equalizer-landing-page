@@ -6,4 +6,4 @@ This is a solution to the [Equalizer landing page challenge on Frontend Mentor](
 
 ### Links
 
-TBD
+-   Live Site URL: https://frontendmentor-submissions.github.io/equalizer-landing-page/
