@@ -26,7 +26,7 @@ build({
                     filename: 'index.html',
                     htmlTemplate: `
                     <!DOCTYPE html>
-                    <html lang="en">
+                    <html lang="en" title="Equalizer landing page">
                     <head>
                         <meta charset="UTF-8">
                         <meta name="viewport" content="width=device-width, initial-scale=1.0">
